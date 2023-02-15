@@ -1,0 +1,104 @@
+#btn_no {
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 40px;
+    
+    background-color: red;
+
+    transition: all 0.1s;
+}
+
+#btn_si {
+    position: relative;
+    border: 0;
+    border-radius: 10px;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-left: 50px;
+
+    background-color: greenyellow;
+    
+    -webkit-animation: breathing 5s ease-out infinite normal; /* Aquí le asignamos la animación a nuestro botón */
+    animation: breathing 5s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+div {
+    position: relative;
+
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    
+
+    border: 0;
+}
+
+
+.buttons {
+    color: #ffffff;
+}
+
+
+/* Definimos la animación 'breathing' */
+@-webkit-keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+
+/* Definamos la animación 'breathing' para navegadores distintos de webkit */
+@keyframes breathing {
+    0% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    25% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    60% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    100% {
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
